@@ -6,11 +6,11 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-
+@RequestMapping("/awsdemo")
 public class AwsController {
-	@GetMapping("awsspringdemo")
-	public ResponseEntity<?> awsDemo() {
-		return ResponseEntity.ok("It Works Successfully");
+	@GetMapping()
+	public String awsDemo() {
+		return "Welcome to Aws Devops";
 	}
 
 }
